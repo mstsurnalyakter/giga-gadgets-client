@@ -10,7 +10,7 @@ const AddProductPage = ({ update }) => {
   const { user } = useAuth() || {};
   const handleAddProduct = (e) => {
     e.preventDefault();
-    
+     
 
     const name = e.target.name.value;
     const price = e.target.price.value;
