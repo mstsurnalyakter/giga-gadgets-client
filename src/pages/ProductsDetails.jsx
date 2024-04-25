@@ -13,12 +13,12 @@ const ProductsDetails = () => {
   const [product,setProduct] = useState({});
 
   useEffect(()=>{
-    fetch(`http://localhost:5000/singleProduct/${id}`)
-    .then(res=>res.json())
-    .then(data=>{
-      setProduct(data);
-    })
-    .catch(error=>console.error(error))
+    fetch(`http://localhost:5000/updateProduct/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setProduct(data);
+      })
+      .catch((error) => console.error(error));
   },[id])
 
   const handleUpdateProduct = e =>{
