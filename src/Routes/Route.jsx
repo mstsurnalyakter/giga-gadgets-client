@@ -47,9 +47,9 @@ const Route = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <ProductsDetails />
-          </ProtectedRoute>
+           </ProtectedRoute>
         ),
-        loader: oneProductLoader,
+        // loader: oneProductLoader,
       },
       {
         path: "/brand/:brandName",

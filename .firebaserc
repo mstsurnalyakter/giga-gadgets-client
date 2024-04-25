@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "gigagadgets-f4dcf"
-  }
+    "dist": "giga-gadgets-client"
+  },
+  "targets": {},
+  "etags": {}
 }

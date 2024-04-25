@@ -130,7 +130,7 @@ const AddProductPage = ({ update }) => {
               </label>
               <input
                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
-                type="text"
+                type="url"
                 placeholder="Enter Image URL"
                 id="image"
                 name="image"

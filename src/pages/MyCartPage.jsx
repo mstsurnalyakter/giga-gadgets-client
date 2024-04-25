@@ -17,16 +17,20 @@ const MyCartPage = () => {
       });
   }, [user]);
 
+
+
   return (
     <div className="gadgetContainer pt-10">
-      
-      {
-        item?.map(p => (
-          <div>
-            <h1>Hello</h1>
-          </div>
-        ))
-      }
+      {item?.map((p) => (
+        <div key={p._id} className="p-2 border-2">
+          <h1>Name:{p?.name}</h1>
+          <h1>Price:{p.price}</h1>
+          <Link to={`/products/${p._id}`}>
+            <button className="btn mr-2">Update</button>
+          </Link>
+          <button className="btn">Delete</button>
+        </div>
+      ))}
     </div>
   );
 };
